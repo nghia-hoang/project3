@@ -1,0 +1,11 @@
+Provide recommendations
+1. Server-side encryption and logging not enabled for S3 . buckets
+2.UDP port 23 which is associated with 'Telnet' is reachable from the internet
+3.Loadbalancer without HTTP->HTTPS redirect
+4. The use of a non-root account is not enforced and Ensure hardware MFA is enabled for the root user
+
+remediate the vulnerabilities
+1.Enable S3 server-side encryption and logging
+2.Disable all other non-necessary ports on the EC2 instance
+3.Application Load Balancer should be configured to redirect all HTTP requests to HTTPS
+4.create a user with admin rights and enabled MFA for root user
